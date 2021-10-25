@@ -19,3 +19,7 @@ if uploaded_file is not None:
     logging.info(f"reading data...")
     data = pd.read_csv(uploaded_file)
     logging.info(f"data read.")
+    
+    st.write("displaying data...")
+    logging.info(f"displaying data...")
+    st.write(data)
