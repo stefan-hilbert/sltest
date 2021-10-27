@@ -1,0 +1,4 @@
+
+requirements = ['streamlit',
+                'pandas>=1.0,<1.3',
+                'nptdms']
