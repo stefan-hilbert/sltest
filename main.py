@@ -10,7 +10,8 @@ st.title("SL Demonstrator")
 
 uploaded_file = st.file_uploader(
     "upload data",
-    type=['csv'],
+    # type=['csv'],
+    type=['tdms'],
     accept_multiple_files=False,
     key="data_uploader",
     help=None)
@@ -19,9 +20,10 @@ if uploaded_file is not None:
 
     st.write("reading data...")
     logging.info(f"reading data...")
-    data = pd.read_csv(uploaded_file)
+    # data = pd.read_csv(uploaded_file)
+    data = TdmsFile(uploaded_file)
     logging.info(f"data read.")
     
     st.write("displaying data...")
-    logging.info(f"displaying data...")
-    st.write(data)
+    # logging.info(f"displaying data...")
+    # st.write(data)
