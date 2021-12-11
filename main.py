@@ -3,9 +3,6 @@ import pandas as pd
 
 import logging
 
-# from nptdms import TdmsFile
-
-
 st.title("SL Demonstrator")
 
 uploaded_file = st.file_uploader(
